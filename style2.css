@@ -1,0 +1,1341 @@
+*{
+    font-family: 'inter';
+}
+h1,h3,h4,h5,h6,p{
+    margin: 0;
+}
+h2{
+    vertical-align: center;
+    text-align: center;
+}
+.buttonEffect {
+    opacity: 0.6;
+    transition: 0.3s;
+}
+.buttonEffect:hover {
+    opacity: 1
+}
+.contact-home{   
+    grid-area: home;        
+    display: flex;      
+    justify-content: center;   
+    margin-top: 10px; 
+} 
+.contact-copyright{
+    grid-area: copyright;
+    display: grid;
+    position:sticky;
+    top: 0px;
+    height: 40px;
+    background: #272424;
+    font-size: 13px;
+    color: #919191;
+    text-align: center;    
+} 
+.container-mainpage {
+    display: grid;
+    column-gap: 0px;
+    row-gap: 0px;
+    background: #F9FAFB;
+    grid-template-columns: 100%;
+    grid-template-areas:
+        "topbar-mainpage"    
+        "navbar"          
+        "mainpic"     
+        "maininform"            
+        "copyright" 
+        ;
+}
+.topbar-position {
+    grid-area: topbar-mainpage;
+    display: grid;
+    position:sticky;
+    top: 0px;
+    z-index: 2;
+    height: 140px;
+    background: #272424;
+    grid-template-columns: 100%;
+    grid-template-areas:
+        "slot-one"
+        "slot-two"
+        "slot-three"
+        "slot-four"
+        ;
+}
+.topbar-first-address {
+    grid-area: slot-one;
+    margin-left: 10px;       
+    margin-top: 5px;   
+    font-size: 13px;
+    color: #919191;      
+}
+.topbar-second-address {
+    grid-area: slot-two;       
+    margin-left: 10px;
+    margin-top: 0px;              
+    font-size: 13px;
+    color: #919191;      
+}
+.topbar-third-address {
+    grid-area: slot-three;
+    display: flex;
+    margin-left: 10px;
+    margin-top: 0px;          
+    font-size: 13px;
+    color: #919191;     
+}
+.topbar-fourth-address {
+    grid-area: slot-four;
+    display: flex;
+    justify-content: space-around; 
+}  
+
+/* CSS for common mainpage */
+.main-master-hilight{
+    grid-area: masterhilight;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.contact-pos{
+    grid-area: contact;
+    display: flex;
+    flex-direction: column; 
+    margin-top: 10px;
+}  
+
+/* CSS for common estimate  */
+span {cursor:pointer; }
+.minus{
+    grid-area: minus;          
+    background:#f2f2f2;    
+    border:1px solid #ddd;
+    display: inline-block;    
+    text-align: center;
+}
+.plus{
+    grid-area: plus;         
+    background:#f2f2f2;       
+    border:1px solid #ddd;
+    display: inline-block;     
+    text-align: center;
+}
+.input{
+    grid-area: tcountnumber;       
+    text-align: center;
+    font-size: 12px;
+    border:1px solid #ddd;       
+}
+.estimate-asid{
+    border: 2px solid #272424;
+    font-size: 12px;
+    text-align: center;    
+} 
+.residential-reset{
+    grid-area: reset;        
+    background:#f2f2f2;       
+    border:1px solid #ddd;
+    display: inline-block;      
+    text-align: center;
+} 
+.estimate-tcount-pos{
+    grid-area: tcount;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas:
+    "plus tcountnumber minus";      
+}
+.estimate-lcount-pos{
+    grid-area: lcount;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas:
+    "plus tcountnumber minus";   
+} 
+.estimate-ccount-pos{
+    grid-area: ccount;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas:
+    "plus tcountnumber minus";       
+} 
+.estimate-gcount-pos{
+    grid-area: gcount;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas:
+    "plus tcountnumber minus";    
+} 
+.estimate-mcount-pos{
+    grid-area: mcount;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas:
+    "plus tcountnumber minus";        
+} 
+.estimate-scount-pos{
+    grid-area: scount;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas:
+    "plus tcountnumber minus";      
+} 
+.estimate-acount-pos{
+    grid-area: acount;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas:
+    "plus tcountnumber minus";      
+} 
+.estimate-healthcount-pos{
+    grid-area: healthcount;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas:
+    "plus tcountnumber minus";    
+}   
+.estimate-ttrimcount-pos{
+    grid-area: trimcount;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas:
+    "plus tcountnumber minus";     
+} 
+.estimate-tremovecount-pos{
+    grid-area: remcount;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas:
+    "plus tcountnumber minus";     
+} 
+.estimate-landcount-pos{
+    grid-area: landcount;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas:
+    "plus tcountnumber minus";        
+} 
+.estimate-weedcount-pos{
+    grid-area: landwcount;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas:
+    "plus tcountnumber minus";      
+} 
+
+/* CSS for common review  */
+.main-result01-pos{
+    grid-area: result01;    
+}
+.main-result02-pos{
+    grid-area: result02;
+} 
+.main-result03-pos{
+    grid-area: result03;       
+}
+.main-review01-pos{
+    grid-area: review01;
+}  
+.main-review02-pos{
+    grid-area: review02;
+}  
+.main-review03-pos{
+    grid-area: review03;
+} 
+
+/* CSS for common service  */
+.service-all-prop:hover{
+    background-color: #919191;        
+}    
+.service-res-01{
+    grid-area: res01;             
+} 
+.service-res-02{
+    grid-area: res02;             
+} 
+.service-res-03{
+    grid-area: res03;             
+}
+.service-res-04{
+    grid-area: res04;             
+}
+.service-res-05{
+    grid-area: res05;             
+} 
+.service-res-06{
+    grid-area: res06;             
+} 
+.service-res-07{
+    grid-area: res07;             
+}
+.service-res-08{
+    grid-area: res08;             
+}
+.service-res-09{
+    grid-area: res09;             
+}     
+.service-res-10{
+    grid-area: res10;             
+} 
+.service-res-11{
+    grid-area: res11;             
+}
+.service-res-12{
+    grid-area: res12;             
+}
+.service-res-13{
+    grid-area: res13;             
+}     
+.service-res-14{
+    grid-area: res14;             
+} 
+.service-res-15{
+    grid-area: res15;             
+}
+.service-res-16{
+    grid-area: res16;             
+}
+.service-res-17{
+    grid-area: res17;             
+} 
+.service-res-18{
+    grid-area: res18;             
+} 
+.service-res-19{
+    grid-area: res19;             
+}
+.service-res-21{
+    grid-area: res21;             
+}
+.service-res-22{
+    grid-area: res22;             
+}  
+.service-com-word{
+    grid-area: comword;  
+}
+.service-com-01{
+    grid-area: com01;             
+}     
+.service-com-02{
+    grid-area: com02;             
+} 
+.service-com-03{
+    grid-area: com03;             
+}
+.service-com-04{
+    grid-area: com04;             
+}
+.service-com-05{
+    grid-area: com05;            
+}     
+.service-com-06{
+    grid-area: com06;             
+} 
+.service-com-07{
+    grid-area: com07;             
+}
+.service-com-08{
+    grid-area: com08;             
+}
+.service-com-09{
+    grid-area: com09;             
+}     
+.service-com-10{
+    grid-area: com10;             
+} 
+.service-com-11{
+    grid-area: com11;             
+}
+.service-com-12{
+    grid-area: com12;             
+}
+.service-com-13{
+    grid-area: com13;        
+} 
+.service-com-14{
+    grid-area: com14;             
+} 
+.service-com-15{
+    grid-area: com15;             
+}
+
+@media screen and (min-width: 415px) {   
+    
+    /* CSS for main landing bigger page */
+    .top-nav {
+        grid-area: navbar;
+        display: grid;              
+        grid-template-columns: 5% 30% 60% 5%;
+        grid-template-areas:
+            " . menu-bigger menu-bigger  . "    
+            " . mainicon mainad ."
+            ;     
+    }
+    .main-advertise-pos{
+        grid-area: mainad;
+        text-align: center;
+        margin-top: 10%;  
+    }
+    .navbar-mainicon-prop{        
+        grid-area: mainicon;
+        width: 60%;   
+        border-radius: 120px;     
+    } 
+    .main-picture-home{
+        grid-area: mainpic;        
+        display: grid;   
+        position: relative;           
+        grid-template-columns: 45% 55% ;
+        grid-template-areas:
+        " main-mainpic main-mainpic "    
+        " main-secondpic main-secondpic"    
+        " main-mainword . "        
+        ;   
+        margin-bottom: 20px;
+    }
+    .main-picture-home-prop{   
+        grid-area: main-mainpic;   
+        width: 100%;   
+        z-index: 1;   
+    }
+    .main-word-home-pos{   
+        grid-area: main-mainword;   
+        position: absolute;
+        bottom: 150 ;      
+        z-index: 0;    
+        overflow: hidden;
+        color: #181719;
+    }
+    .main-second-home-pos{   
+        grid-area: main-secondpic;   
+        width: 100%;     
+    }
+    #menu-toggle {
+        display: none;
+    }
+    #buttons li {
+        float: left;
+        list-style: none;
+        text-align: center;
+        background-color: #272424;;        
+        width: 20%;
+        line-height: 60px;
+    }
+    #buttons li a {
+        text-decoration: none;
+        color: #f9f9f9;
+        display: block;
+    }
+      
+    #buttons li a:hover {
+        text-decoration: none;
+        color: #000000;
+        background-color: #919191;
+        overflow: hidden;
+    }
+    .menu{
+        grid-area: menu-bigger;     
+        padding: 0;       
+    }  
+    .main-mainform{
+        grid-area: maininform;     
+        display: grid;       
+        position: sticky;
+        grid-template-columns: 49% 2% 49% ;
+        grid-template-areas:
+        " masterhilight masterhilight masterhilight"
+        " service-picture . testi-picture "
+        " service-detail . testi-detail"
+        " esti-picture . about-picture"
+        " esti-detail . about-detail"
+        " contact contact contact"
+        " contactQR contactQR contactQR"
+        ;      
+    }
+    .service-picture-pos{        
+        grid-area: service-picture;       
+        width: 100%;       
+    }
+    .service-picture-prop{
+        grid-area: service-detail;     
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: #00000080;      
+        color: #ffffff;             
+        position: relative;       
+        bottom: 150%;
+        height: 150%;
+    }
+
+    .testi-picture-pos{
+        grid-area: testi-picture;      
+        width: 100%;    
+    }
+    .testi-picture-prop{
+        grid-area: testi-detail;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+        background: #00000080;
+        color: #ffffff;
+        position: relative;
+        bottom: 150%;
+        height: 150%;
+    }
+
+    .esti-picture-pos{
+        grid-area: esti-picture;       
+        width: 100%;     
+    }
+    .esti-picture-prop{
+        grid-area: esti-detail;
+        display: flex;
+        flex-direction: column;       
+        justify-content: center;
+        color: #ffffff;
+        background: #00000080;
+        position: relative;
+        bottom: 150%;
+        height: 150%;
+    }
+    .about-picture-pos{
+        grid-area: about-picture;
+        width: 100%;
+    }
+    .about-picture-prop{
+        grid-area: about-detail;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        color: #ffffff;
+        background: #00000080;
+        bottom: 150%;
+        height: 150%;        
+    }   
+    .contact-prop{      
+        text-align: center;         
+        background: #f3f3f3;
+    }
+    .contact-qr-pos{
+        grid-area: contactQR;        
+        flex-direction: column;   
+        background: #f3f3f3;  
+    }
+    .contact-qr-prop{   
+        max-width: 30%;
+        border: 5px solid #f0f3f4;   
+    }
+
+    /* CSS For estimate page */
+
+    .estimate-bigger{
+        align-items: safe;
+        display: grid;       
+        margin-top: 3px;       
+        grid-template-columns: 10% 40% 40% 10% ;
+        grid-template-areas:
+             "topword topword topword topword "
+             "secondword secondword secondword secondword "
+             ". resTag resTag ." 
+             ". respic resTable . "
+             ". treeTag treeTag ."
+             ". tTable treepic ."
+             " . landTag landTag ."
+             " . landpic lTable . "
+            "copyright copyright copyright copyright"              
+             ;
+    }
+    .estimate-bigger-top {
+        grid-area: topword;  
+    }
+    .estimate-bigger-second {
+        grid-area: secondword;       
+    }    
+    .estimate-bigger-res {
+        grid-area: resTag;       
+    }
+    .estimate-bigger-tree {
+        grid-area: treeTag;     
+    }
+    .estimate-rescount-pic{
+        grid-area: respic;
+        width: 100%;
+        margin-top: 5px;       
+    } 
+    .estimate-residential{
+        grid-area: resTable;     
+        display: grid;     
+        margin-top: 10px;      
+        grid-template-columns: 40% 18% 22% 20%;
+        grid-template-areas:
+            "Treatment tcost tcount tsum"
+            "Lawn lcost lcount lsum"
+            "Grass gcost ccount gsum"
+            "Cleaning ccost gcount csum"
+            "Mulching mcost mcount msum"
+            "Seeding scost scount ssum"
+            "Aeration acost acount asum"  
+            "sum unit reset gradsum"
+             ;       
+        height: fit-content;
+    }
+    .topword-review-pos{              
+        text-align: center;
+        margin-top: 10px;      
+        padding-top: 10px;
+        padding-bottom: 10px;       
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);        
+    }
+    .estimate-tree{
+        grid-area: tTable;     
+        display: grid;     
+        margin-top: 10px;      
+        grid-template-columns: 40% 18% 22% 20%;
+        grid-template-areas:
+            "thealth healthcost healthcount healthsum"
+            "ttrim trimcost trimcount trimsum"
+            "trem remcost remcount remsum"             
+             ;    
+        height: fit-content;
+    }
+    .estimate-treecount-pic{
+        grid-area: treepic;
+        width: 100%;      
+        margin-top: 5px;
+    } 
+    .estimate-bigger-land {
+        grid-area: landTag;      
+    }    
+    .estimate-lanscape{
+        grid-area: lTable;     
+        display: grid;        
+        margin-top: 10px;     
+        grid-template-columns: 40% 18% 22% 20%;
+        grid-template-areas:
+            "land landcost landcount landsum"
+            "landw landwcost landwcount landwsum"                        
+             ;
+        height: fit-content;
+    }
+    .estimate-weedcount-pic{
+        grid-area: landpic;
+        width: 100%;
+        margin-top: 5px;       
+    }    
+
+    /* CSS for review */
+
+    #slideset1 {height: 10em; position: relative}
+    #slideset1 > * {visibility: hidden; position: absolute;
+        top: 0; left: 0; animation: 16s autoplay1 infinite}
+    @keyframes autoplay1 {
+            0% {visibility: visible}
+            25% {visibility: hidden}
+    }
+    #slideset1 > *:nth-child(1) {animation-delay: 0s}
+    #slideset1 > *:nth-child(2) {animation-delay: 4s}
+    #slideset1 > *:nth-child(3) {animation-delay: 8s}
+    #slideset1 > *:nth-child(4) {animation-delay: 12s}
+
+    .container-review{
+        display: grid;
+        column-gap: 0px;
+        row-gap: 0px;
+        background: #F9FAFB;
+        grid-template-columns: 6% 28% 2% 28% 2% 28% 6%;
+        grid-template-areas:
+            "resultmaster resultmaster resultmaster resultmaster resultmaster resultmaster resultmaster"
+            ". review01 . review02 . review03 . "
+            ". result01 . result02 . result03 . "
+            ;
+        margin-bottom: 40px;
+    } 
+    .main-resultmain-pos{
+        grid-area: resultmaster;
+        max-width: 100%;
+        opacity: 0.9;
+        display: grid;         
+        column-gap: 0px;
+        row-gap: 0px;         
+        grid-template-columns: 5% 60% 35%;
+        grid-template-areas:
+        ". . . "
+        ". . ."
+        ". hilight ."
+        ". . ."
+        ;                  
+    }
+    .main-review-hightlight{
+        grid-area: hilight;
+        background: #F9FAFB;
+        padding-left: 20px;
+        max-height: 60%;
+        max-width: 90%;         
+        border-radius: 5px;          
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }    
+    .image-prop{
+        margin-top: 20px;          
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);       
+    }
+    .dialog-prop{      
+        margin-top: 5px;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);            
+    }    
+    .image-prop-about{
+        padding: 10px 10px;
+        width: 95%;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    /* CSS for contact us */
+    .container-contact{
+        display: grid;          
+        padding-left: 2%;
+        background: #F9FAFB;
+        grid-template-columns:  50% 50%;
+        grid-template-areas:
+            "contact-detail contact-detail"
+            "contact-map contact-map"
+            "contact-email contact-whatsapp"
+            "contact-email-qr contact-whatsapp-qr"               
+            "home home "
+            "copyright copyright"        
+            ;
+        margin-top: 10px;
+    }
+
+    .contact2-qr-prop{      
+        display: flex;       
+        padding: 20px;
+        max-width: 50%;
+        border: 5px solid #f0f3f4;        
+    }
+    .email-qr-prop{      
+        display: flex;       
+        padding: 20px;
+        max-width: 50%;
+        border: 5px solid #f0f3f4;        
+    }
+    .contact-map-pos{
+        margin-top: 15px;
+        grid-area: contact-map;
+        overflow:hidden;
+        padding-bottom:56.25%;    
+        position:relative;          
+    }  
+    .contact-map-pos iframe{
+        left:0;    
+        top:0;    
+        height:100%;    
+        width:100%;    
+        position:absolute;        
+    }
+    .contact-whatsapp-pos{
+        margin-top: 15px;
+        grid-area: contact-whatsapp;     
+    }  
+    .contact-detail-pos{
+        margin-top: 15px;
+        grid-area: contact-detail;
+        text-align: center;       
+    }  
+    .contact2-qr-pos{
+        grid-area: contact-whatsapp-qr;
+        display: flex;
+        flex-direction: column;      
+        align-items: center;     
+    }
+    .email-detail-pos{
+        grid-area: contact-email;
+        margin-top: 15px;       
+    }  
+    .email-qr-pos{
+        grid-area: contact-email-qr;
+        display: flex;
+        flex-direction: column;  
+        align-items: center;    
+    }
+
+    /* For service bigger */    
+    .service-master{
+        
+        display: grid;
+        margin-top: 10px;
+        grid-template-columns: 3% 30% 2% 30% 2% 30% 3%;
+        grid-template-areas:
+            "topword topword topword topword topword topword topword"
+            ". topdetail topdetail topdetail serviceimg serviceimg  ."              
+            "ressub ressub ressub ressub ressub ressub ressub"
+            ". res01 . res02 . res03 ."
+            ". res04 . res05 . res06 ."
+            ". res07 . res08 . res09 ."
+            ". res10 . res11 . res12 ."
+            ". res13 . res14 . res15 ."
+            ". res16 . res17 . res18 ."
+            ". res19 . res21 . res22 ."                            
+            "comword comword comword comword comword comword comword"
+            ". serviceimg2 serviceimg2 comreview comreview comreview ."                
+            ". com01 . com02 . com03 . "
+            ". com04 . com05 . com06 . "
+            ". com07 . com08 . com09 . "
+            ". com10 . com11 . com12 . " 
+            ". com13 . com14 . com15 . "              
+                ;
+    }
+
+    .service-image-pos{
+        grid-area: serviceimg;
+        width: 100%;
+    }
+    .service-image2-pos{
+        grid-area: serviceimg2;
+        width: 100%;          
+    }
+    .service-topword{
+        grid-area: topword;                 
+    } 
+    .service-topword-detail{
+        grid-area: topdetail;   
+        display: flex;
+        align-items: center; 
+    } 
+    .service-ressub{
+        grid-area: ressub;                
+    }     
+    .service-all-prop{    
+        text-align: center;
+        margin-top: 10px;          
+        border-radius: 10px;
+        height: 40px;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }        
+    .service-res-20{
+        grid-area: res20;           
+        display: none;         
+    }    
+    .service-com-review{
+        grid-area: comreview;  
+        display: flex;
+        align-items: center; 
+    }
+    .service-com-16{
+        grid-area: com16;     
+        display: none;        
+    }
+
+
+
+}
+@media only screen and (max-width: 414px), only screen and (max-device-width: 414px) {
+    
+    /* CSS for main landing page */ 
+   
+     .navbar-mainicon-prop{        
+        border-radius: 50px;
+        max-width: 28%;
+    }    
+    .top-nav {
+        grid-area: navbar;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;      
+        background: #f3f3f3;     
+        height: 76px;
+        padding: 1em;
+      }
+    .menu-button-container {         
+        display: flex;
+    }      
+    .menu {
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        margin-top: 260px;
+        flex-direction: column;
+        width: 91.5%;
+        padding-right: 5%;       
+    }
+    #menu-toggle {
+        display: none;
+    }
+    #menu-toggle ~ .menu li {
+        overflow: hidden;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #menu-toggle:checked ~ .menu li {
+        border: 1px solid #333;
+        height: 2.5em;
+        padding: 0.5em;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .menu > li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 100%;
+        color: white;
+        background-color: #222;
+    }
+    .menu > li:not(:last-child) {
+        border-bottom: 1px solid #444;
+    }
+    .menu-button,
+    .menu-button::before,
+    .menu-button::after {
+    display: block;
+    background-color: #0ce613;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+    }
+    .menu-button::before {
+    content: '';
+    margin-top: -8px;
+    }
+    .menu-button::after {
+    content: '';
+    margin-top: 8px;
+    }
+    #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+    }
+    #menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+    }
+    #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+    }
+    .main-advertise-pos{
+       display: none;
+    }
+    ul,li{
+        padding: 0;
+    }
+    a:active {
+        color: none;
+    }
+    .main-picture-home{       
+        grid-area: mainpic;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+    }
+    .main-picture-home-prop{      
+        display: flex;        
+        width: 100%;
+        margin-bottom: 10px;
+        justify-content: center;       
+    }
+    .main-picture-home-text{     
+        display: flex;       
+        justify-items: center;       
+    }    
+    .main-word-home-pos{          
+        display: none;
+    }
+    .main-second-home-pos{          
+        display: none;
+    }
+    .main-mainform{
+        grid-area: maininform;     
+        display: grid;       
+        grid-template-columns: 65% 35%;
+        grid-template-areas:
+            "masterhilight masterhilight"
+            "service-picture service-detail"
+            "testi-picture testi-detail"
+            "esti-picture esti-detail"
+            "about-picture about-detail"
+            "contact contact"
+            "contactQR contactQR"
+             ;
+    } 
+    .service-picture-pos{
+        grid-area: service-picture;       
+        width: 100%;       
+        border-radius: 5px;    
+        position: relative;
+    }
+    .service-picture-prop{
+        grid-area: service-detail;
+        display: flex;
+        flex-direction: column;        
+        text-align: center;
+        justify-content: center;
+        border: 3px solid #919191;
+        font-size: small;            
+    }
+    .testi-picture-pos{
+        grid-area: testi-picture;       
+        margin-top: 10px;
+        width: 100%;     
+        border-radius: 5px;      
+    }
+    .testi-picture-prop{
+        grid-area: testi-detail;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+        text-align: center;
+        border: 3px solid #919191;
+        font-size: small;
+        margin-top: 10px;
+    }
+    .esti-picture-pos{
+        grid-area: esti-picture;         
+        margin-top: 10px;     
+        max-width: 100%;
+        border-radius: 5px;    
+    }
+    .esti-picture-prop{
+        grid-area: esti-detail;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        border: 3px solid #919191;
+        font-size: small;
+        margin-top: 10px;
+    }
+    .about-picture-pos{
+        grid-area: about-picture;      
+        margin-top: 10px;
+        width: 100%;
+        border-radius: 5px;           
+    }
+    .about-picture-prop{
+        grid-area: about-detail;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        border: 3px solid #919191;
+        font-size: small;
+        margin-top: 10px;        
+    }   
+    .contact-prop{      
+        text-align: center;         
+    }
+    .contact-qr-pos{
+        grid-area: contactQR;
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+    }
+    .contact-qr-prop{      
+        display: flex;    
+        padding: 60px;
+        border: 5px solid #f0f3f4;   
+    } 
+    
+    /* CSS for review */
+    .container-review{
+        display: grid;
+        column-gap: 0px;
+        row-gap: 0px;
+        background: #F9FAFB;
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "topword"   
+            "review01"
+            "review02"
+            "review03"
+            "result01"
+            "result02"
+            "result03"           
+            "copyright"
+            ;
+    }
+    .topword-review-pos{              
+        text-align: left;
+        margin-top: 10px;     
+        padding: 10px 10px;
+        width: 95%;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);        
+    }
+    .main-resultmain-pos{      
+        display: none;
+    } 
+    .image-prop{
+        margin-top: 20px;
+        padding: 10px 10px;
+        width: 95%;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .dialog-prop{     
+        padding: 10px 10px;
+        width: 95%;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .image-prop-about{    
+        padding: 10px 10px;
+        width: 95%;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    /* CSS for contact page */
+
+    .container-contact{
+        display: grid;
+        column-gap: 0px;
+        row-gap: 0px;
+        padding-left: 0;
+        background: #F9FAFB;
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "contact-detail"
+            "contact-map"
+            "contact-email"
+            "contact-email-qr"
+            "contact-whatsapp"
+            "contact-whatsapp-qr"
+            "home"
+            "copyright"         
+            ;
+    }
+    .contact-map-pos{
+        margin-top: 15px;
+        grid-area: contact-map;
+        overflow:hidden;
+        padding-bottom:56.25%;    
+        position:relative;    
+        height:0;
+    }  
+    .contact-map-pos iframe{
+        left:0;    
+        top:0;    
+        height:100%;    
+        width:100%;    
+        position:absolute;    
+    }
+    .contact-whatsapp-pos{
+        margin-top: 15px;
+        grid-area: contact-whatsapp;           
+    }  
+    .contact-detail-pos{
+        margin-top: 15px;
+        grid-area: contact-detail;       
+    }  
+    .contact2-qr-pos{
+        grid-area: contact-whatsapp-qr;
+        display: flex;
+        flex-direction: column;
+        margin: 15px;          
+    }
+    .contact2-qr-prop{      
+        display: flex;       
+        padding: 60px;
+        border: 5px solid #f0f3f4;       
+    }
+    .email-detail-pos{
+        grid-area: contact-email;
+        margin-top: 15px;             
+    }  
+    .email-qr-pos{
+        grid-area: contact-email-qr;
+        display: flex;
+        flex-direction: column;
+        margin: 15px;          
+    }
+    .email-qr-prop{      
+        display: flex;       
+        padding: 60px;
+        border: 5px solid #f0f3f4;       
+    }
+
+    /* CSS for estimate page */
+
+    .estimate-bigger{
+        display: grid;     
+        margin-top: 3px;      
+        grid-template-columns: 100%;
+        grid-template-areas:
+             "topword"     
+             "secondword"
+             "resTag"
+             "respic"
+             "estimateres"
+             "treeTag"
+             "treepic"
+             "estimatetree"
+             "landTag"
+             "landpic"
+             "estimateland"
+             "copyright"              
+             ;
+    }
+    .estimate-bigger-top {
+        grid-area: topword;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;     
+    }
+    .estimate-bigger-second {
+        grid-area: secondword;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;     
+    }
+    .estimate-bigger-res {
+    grid-area: resTag;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    }
+    .estimate-rescount-pic{
+        grid-area: respic;
+        width: 100%;     
+    } 
+    .estimate-residential{
+        grid-area: estimateres;     
+        display: grid;  
+        margin-top: 10px;       
+        grid-template-columns: 40% 18% 22% 20%;
+        grid-template-areas:
+            "Treatment tcost tcount tsum"
+            "Lawn lcost lcount lsum"
+            "Grass gcost ccount gsum"
+            "Cleaning ccost gcount csum"
+            "Mulching mcost mcount msum"
+            "Seeding scost scount ssum"
+            "Aeration acost acount asum"  
+            "sum unit reset gradsum"
+             ;
+    }    
+    .estimate-bigger-tree {
+        grid-area: treeTag;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;     
+    }
+    .estimate-tree{
+        grid-area: estimatetree;     
+        display: grid;   
+        margin-top: 10px;      
+        grid-template-columns: 40% 18% 22% 20%;
+        grid-template-areas:
+            "thealth healthcost healthcount healthsum"
+            "ttrim trimcost trimcount trimsum"
+            "trem remcost remcount remsum"             
+             ;
+    }
+    .estimate-treecount-pic{
+        grid-area: treepic;
+        width: 100%;       
+    }     
+    .estimate-bigger-land {
+        grid-area: landTag;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;         
+    }    
+    .estimate-lanscape{
+        grid-area: estimateland;     
+        display: grid;       
+        margin-top: 10px;      
+        grid-template-columns: 40% 18% 22% 20%;
+        grid-template-areas:
+            "land landcost landcount landsum"
+            "landw landwcost landwcount landwsum"                        
+             ;
+    }
+    .estimate-weedcount-pic{
+        grid-area: landpic;
+        width: 100%;      
+    }    
+
+    /* For service small */
+    .service-master{
+        display: grid;
+        margin-top: 10px;
+        grid-template-columns: 5% 43% 4% 43% 5%;
+        grid-template-areas:
+            "topword topword topword topword topword"
+            "topdetail topdetail topdetail topdetail topdetail"
+            "ressub ressub ressub ressub ressub"
+            ". res01 . res02 ."
+            ". res03 . res04 ."
+            ". res05 . res06 ."
+            ". res07 . res08 ."
+            ". res09 . res10 ."
+            ". res11 . res12 ."
+            ". res13 . res14 ."
+            ". res15 . res16 ."
+            ". res17 . res18 ."
+            ". res19 . res20 ."
+            ". res21 . res22 ."
+            "comreview comreview comreview comreview comreview"
+            "comword comword comword comword comword "
+            ". com01 . com02 ."
+            ". com03 . com04 ."
+            ". com05 . com06 ."
+            ". com07 . com08 ."
+            ". com09 . com10 ."
+            ". com11 . com12 ."
+            ". com13 . com14 ."
+            ". com15 . com16 ."
+             ;
+    }
+    .service-image-pos{
+        grid-area: serviceimg;
+        width: 100%;
+        display: none;
+    }
+    .service-image2-pos{
+        grid-area: serviceimg2;
+        width: 100%;      
+        display: none;    
+    }
+    .service-topword{
+        grid-area: topword;       
+    } 
+    .service-topword-detail{
+        grid-area: topdetail;            
+    } 
+    .service-ressub{
+        grid-area: ressub;          
+    } 
+    .service-all-prop{    
+        text-align: center;
+        margin-top: 10px;       
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }    
+    .service-res-20{
+        grid-area: res20;        
+    }  
+    .service-com-review{
+        grid-area: comreview;  
+    }
+    .service-com-16{
+        grid-area: com16;             
+    }
+}
